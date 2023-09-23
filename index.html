@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title> 
+    <link href="Style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>WSIZ BANK</h1>
+    </header>
+    <div class="container">
+        <div class="hack">
+            <h1>Zadanie2</h1>
+            <div class="buttons-hack">
+                <p>Wybierz liczbę użytkowników, których chcesz zhakować:</p>
+                <input type="number" id="recordsInput" min="1" max="10" value="10">
+                <button onclick="generateRecords()">Generuj</button>
+            </div>
+
+            <table id="recordsTable" class="list-persons">
+                <thead>
+                    <tr class="head-tr">
+                        <th>Imię</th>
+                        <th>Nazwisko</th>
+                        <th>Wiek</th>
+                        <th>Numer telefonu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="head-table" style="width: max-content;">
+            <h1 style="text-align: center;">Tabliczka mnożenia</h1>
+            <table class="table">
+            </table> 
+        </div>
+        <div class="p">
+            <h1>Zadanie 3</h1>
+            <p>Name: <span class="n1"></span></p>
+            <p>SurName: <span class="s2"></span></p>
+            <p>Balance: <span class="b3"></span></p>
+        </div> 
+        <div class="actions" style="display: none;">
+          <button onclick="addMoney()">Dodaj pieniądze</button>
+          <button onclick="withdrawMoney()">usunąć pieniądze</button>
+        </div>
+        <button class="enter-bank-button" onclick="runCode()">Enter Bank</button>
+        <div class="pin">
+            <h1>Pins</h1>
+            <p>5235</p>
+            <p>9237</p>
+            <p>9245</p>
+        </div>
+    </div>
+<script src="javascript.js"></script>
+</body>
+</html>
